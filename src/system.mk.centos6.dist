@@ -1,0 +1,54 @@
+#
+# this makefile is configured for CentOS 6.5 AMD64
+# these are the packages you will need:
+# sudo yum groupinstall "Development Tools"
+# sudo yum install python-libs python-devel python-debuginfo \ 
+# db4-devel mysql-libs mysql-devel gdb mercurial
+#
+
+debug := yes
+opt := no
+prof := no
+link_db_statically := no
+symlink_bins := yes
+
+have_bdb := yes
+have_mysql := yes
+have_python := yes
+
+ASSSHOME = ..
+BINDIR = $(ASSSHOME)/bin
+BUILDDIR = $(ASSSHOME)/build
+SCRIPTS = $(ASSSHOME)/scripts
+PYMOD_HEADERS = $(wildcard */*.h)
+
+INSTALL := install
+LN := ln
+PYTHON := python
+REALPATH := readlink -f
+
+DB_HOME = /usr
+DB_INC = $(DB_HOME)/include
+DB_LIB = $(DB_HOME)/lib64
+DB_CFLAGS = -I$(DB_INC)
+ifneq ($(link_db_statically),yes)
+DB_LDFLAGS = -L$(DB_LIB) -Wl,-rpath,$(DB_LIB) -ldb
+else
+DB_LDFLAGS = $(DB_LIB)/libdb.a
+endif
+
+MYSQL_HOME = /usr
+MYSQL_INC = $(MYSQL_HOME)/include/mysql
+MYSQL_LIB = $(MYSQL_HOME)/lib64/mysql
+MYSQL_CFLAGS = -I$(MYSQL_INC)
+MYSQL_LDFLAGS = -L$(MYSQL_LIB) -Wl,-rpath,$(MYSQL_LIB) -lmysqlclient_r
+
+PYTHON_HOME = /usr
+PYTHON_VERSION = 2.6
+PYTHON_INC = $(PYTHON_HOME)/include/python$(PYTHON_VERSION)
+PYTHON_LIB = $(PYTHON_HOME)/lib64/python$(PYTHON_VERSION)
+PYTHON_CFLAGS = -I$(PYTHON_INC)
+PYTHON_LDFLAGS = -L$(PYTHON_LIB)/config -lpython$(PYTHON_VERSION) $(UTIL_LIB) -lm
+
+# dist: public
+

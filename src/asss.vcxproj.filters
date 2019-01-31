@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{6a8bf4e6-1735-4349-a2d8-a747112bacb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\packets">
+      <UniqueIdentifier>{eda18746-99fb-447f-8878-31074da3755b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{5dd3103b-2a78-41a7-9d26-48e45d5df955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\win32">
+      <UniqueIdentifier>{ee59276e-c91d-43ad-ac2f-dedd8261a5ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\win32">
+      <UniqueIdentifier>{75205558-7d45-44f8-8abf-6e03d79c8f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated">
+      <UniqueIdentifier>{ad6c6e4e-e3dd-485c-b2b9-a4b784672e19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\admincmd.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ap_multipub.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\arenaman.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\arenaperm.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\auth_ban.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\auth_file.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\auth_prefix.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\balls.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\banners.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\billing.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\billing_ssc.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\bricks.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\buy.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\bw_default.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\bw_nolimit.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\capman.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cfghelp.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\chat.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\chatnet.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\clientset.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cmdlist.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cmdman.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\config.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\core.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\deadlock.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\directory.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enc_null.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enc_vie.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enf_flagwin.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enf_legalship.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enf_lockspec.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enf_shipchange.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\enf_shipcount.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\fake.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\filetrans.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\flagcore.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\freqman.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\freqowners.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\game.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\game_timer.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\help.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\idle.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\koth.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\lagaction.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\lagdata.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\log_console.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\log_file.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\log_staff.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\log_sysop.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\logman.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mainloop.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mapdata.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mapnewsdl.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\messages.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\net.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\notify.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\objects.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\obscene.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\player.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\playercmd.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\prng.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\quickfix.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\redirect.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\security.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sendfile.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\watchdamage.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="main\app.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\cmod.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\main.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\md5.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\module.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\pathutil.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\protutil.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\rwlock.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\util.c">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win32compat.c">
+      <Filter>Source Files\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\clientset.def">
+      <Filter>Source Files\core</Filter>
+    </None>
+    <None Include="..\build\generated\cfghelp.inc">
+      <Filter>Source Files\generated</Filter>
+    </None>
+    <None Include="..\build\generated\sparse.inc">
+      <Filter>Source Files\generated</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="packets\balls.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\banners.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\billing.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\brick.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\chat.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\clientset.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\flags.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\goarena.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\green.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\kill.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\koth.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\login.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\loginresp.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\mapfname.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\mapobj.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\objects.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\pdata.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\peer.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\ppk.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\redirect.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\reliable.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\requestfile.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\scoreupd.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\security.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\shipchange.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\simple.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\speed.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\stats.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\timesync.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\types.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\voice.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="packets\watchdamage.h">
+      <Filter>Header Files\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="include\app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\arenaman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\asss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\balls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\banners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\billing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bricks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brickwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bwlimit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\capman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfghelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\chat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\chatnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\clientset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cmdman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\db_layout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fg_turf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fg_wz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filetrans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\flagcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\freqman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\idle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jackpot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\koth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lagdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\logman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mainloop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mapdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mapnewsdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net-client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\obscene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pathutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\peer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\periodic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\persist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\redirect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\reldb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rwlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sizes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\statcodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\watchdamage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\win32compat.h">
+      <Filter>Header Files\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\unistd.h">
+      <Filter>Header Files\win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="win32\snprintf.c">
+      <Filter>Source Files\win32</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

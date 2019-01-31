@@ -1,0 +1,13 @@
+.hg
+.hgignore
+.hgtags
+
+src/system/.mk
+src/contenc
+bin
+build
+doc/doxygen
+windeps
+.vagrant
+.idea/
+lib/

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\admincmd.c" />
+    <ClCompile Include="core\ap_multipub.c" />
+    <ClCompile Include="core\arenaman.c" />
+    <ClCompile Include="core\arenaperm.c" />
+    <ClCompile Include="core\auth_ban.c" />
+    <ClCompile Include="core\auth_file.c" />
+    <ClCompile Include="core\auth_prefix.c" />
+    <ClCompile Include="core\balls.c" />
+    <ClCompile Include="core\banners.c" />
+    <ClCompile Include="core\billing.c" />
+    <ClCompile Include="core\billing_ssc.c" />
+    <ClCompile Include="core\bricks.c" />
+    <ClCompile Include="core\buy.c" />
+    <ClCompile Include="core\bw_default.c" />
+    <ClCompile Include="core\bw_nolimit.c" />
+    <ClCompile Include="core\capman.c" />
+    <ClCompile Include="core\cfghelp.c" />
+    <ClCompile Include="core\chat.c" />
+    <ClCompile Include="core\chatnet.c" />
+    <ClCompile Include="core\clientset.c" />
+    <ClCompile Include="core\cmdlist.c" />
+    <ClCompile Include="core\cmdman.c" />
+    <ClCompile Include="core\config.c" />
+    <ClCompile Include="core\core.c" />
+    <ClCompile Include="core\deadlock.c" />
+    <ClCompile Include="core\directory.c" />
+    <ClCompile Include="core\enc_null.c" />
+    <ClCompile Include="core\enc_vie.c" />
+    <ClCompile Include="core\enf_flagwin.c" />
+    <ClCompile Include="core\enf_legalship.c" />
+    <ClCompile Include="core\enf_lockspec.c" />
+    <ClCompile Include="core\enf_shipchange.c" />
+    <ClCompile Include="core\enf_shipcount.c" />
+    <ClCompile Include="core\fake.c" />
+    <ClCompile Include="core\filetrans.c" />
+    <ClCompile Include="core\flagcore.c" />
+    <ClCompile Include="core\freqman.c" />
+    <ClCompile Include="core\freqowners.c" />
+    <ClCompile Include="core\game.c" />
+    <ClCompile Include="core\game_timer.c" />
+    <ClCompile Include="core\help.c" />
+    <ClCompile Include="core\idle.c" />
+    <ClCompile Include="core\koth.c" />
+    <ClCompile Include="core\lagaction.c" />
+    <ClCompile Include="core\lagdata.c" />
+    <ClCompile Include="core\logman.c" />
+    <ClCompile Include="core\log_console.c" />
+    <ClCompile Include="core\log_file.c" />
+    <ClCompile Include="core\log_staff.c" />
+    <ClCompile Include="core\log_sysop.c" />
+    <ClCompile Include="core\mainloop.c" />
+    <ClCompile Include="core\mapdata.c" />
+    <ClCompile Include="core\mapnewsdl.c" />
+    <ClCompile Include="core\messages.c" />
+    <ClCompile Include="core\net.c" />
+    <ClCompile Include="core\notify.c" />
+    <ClCompile Include="core\objects.c" />
+    <ClCompile Include="core\obscene.c" />
+    <ClCompile Include="core\player.c" />
+    <ClCompile Include="core\playercmd.c" />
+    <ClCompile Include="core\prng.c" />
+    <ClCompile Include="core\quickfix.c" />
+    <ClCompile Include="core\redirect.c" />
+    <ClCompile Include="core\security.c" />
+    <ClCompile Include="core\sendfile.c" />
+    <ClCompile Include="core\watchdamage.c" />
+    <ClCompile Include="main\app.c" />
+    <ClCompile Include="main\cmod.c" />
+    <ClCompile Include="main\main.c" />
+    <ClCompile Include="main\md5.c" />
+    <ClCompile Include="main\module.c" />
+    <ClCompile Include="main\pathutil.c" />
+    <ClCompile Include="main\protutil.c" />
+    <ClCompile Include="main\rwlock.c" />
+    <ClCompile Include="main\util.c" />
+    <Text Include="win32\snprintf.c" />
+    <ClCompile Include="win32\win32compat.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\build\generated\cfghelp.inc" />
+    <None Include="..\build\generated\sparse.inc" />
+    <None Include="core\clientset.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\app.h" />
+    <ClInclude Include="include\arenaman.h" />
+    <ClInclude Include="include\asss.h" />
+    <ClInclude Include="include\balls.h" />
+    <ClInclude Include="include\banners.h" />
+    <ClInclude Include="include\billing.h" />
+    <ClInclude Include="include\bricks.h" />
+    <ClInclude Include="include\brickwriter.h" />
+    <ClInclude Include="include\bwlimit.h" />
+    <ClInclude Include="include\capman.h" />
+    <ClInclude Include="include\cfghelp.h" />
+    <ClInclude Include="include\chat.h" />
+    <ClInclude Include="include\chatnet.h" />
+    <ClInclude Include="include\clientset.h" />
+    <ClInclude Include="include\cmdman.h" />
+    <ClInclude Include="include\cmod.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\core.h" />
+    <ClInclude Include="include\db_layout.h" />
+    <ClInclude Include="include\defs.h" />
+    <ClInclude Include="include\encrypt.h" />
+    <ClInclude Include="include\fake.h" />
+    <ClInclude Include="include\fg_turf.h" />
+    <ClInclude Include="include\fg_wz.h" />
+    <ClInclude Include="include\filetrans.h" />
+    <ClInclude Include="include\flagcore.h" />
+    <ClInclude Include="include\freqman.h" />
+    <ClInclude Include="include\game.h" />
+    <ClInclude Include="include\idle.h" />
+    <ClInclude Include="include\jackpot.h" />
+    <ClInclude Include="include\koth.h" />
+    <ClInclude Include="include\lagdata.h" />
+    <ClInclude Include="include\logman.h" />
+    <ClInclude Include="include\log_file.h" />
+    <ClInclude Include="include\mainloop.h" />
+    <ClInclude Include="include\mapdata.h" />
+    <ClInclude Include="include\mapnewsdl.h" />
+    <ClInclude Include="include\md5.h" />
+    <ClInclude Include="include\module.h" />
+    <ClInclude Include="include\net-client.h" />
+    <ClInclude Include="include\net.h" />
+    <ClInclude Include="include\objects.h" />
+    <ClInclude Include="include\obscene.h" />
+    <ClInclude Include="include\param.h" />
+    <ClInclude Include="include\pathutil.h" />
+    <ClInclude Include="include\peer.h" />
+    <ClInclude Include="include\periodic.h" />
+    <ClInclude Include="include\persist.h" />
+    <ClInclude Include="include\player.h" />
+    <ClInclude Include="include\prng.h" />
+    <ClInclude Include="include\protutil.h" />
+    <ClInclude Include="include\redirect.h" />
+    <ClInclude Include="include\reldb.h" />
+    <ClInclude Include="include\rwlock.h" />
+    <ClInclude Include="include\sizes.h" />
+    <ClInclude Include="include\statcodes.h" />
+    <ClInclude Include="include\stats.h" />
+    <ClInclude Include="include\util.h" />
+    <ClInclude Include="include\watchdamage.h" />
+    <ClInclude Include="packets\balls.h" />
+    <ClInclude Include="packets\banners.h" />
+    <ClInclude Include="packets\billing.h" />
+    <ClInclude Include="packets\brick.h" />
+    <ClInclude Include="packets\chat.h" />
+    <ClInclude Include="packets\clientset.h" />
+    <ClInclude Include="packets\flags.h" />
+    <ClInclude Include="packets\goarena.h" />
+    <ClInclude Include="packets\green.h" />
+    <ClInclude Include="packets\kill.h" />
+    <ClInclude Include="packets\koth.h" />
+    <ClInclude Include="packets\login.h" />
+    <ClInclude Include="packets\loginresp.h" />
+    <ClInclude Include="packets\mapfname.h" />
+    <ClInclude Include="packets\mapobj.h" />
+    <ClInclude Include="packets\objects.h" />
+    <ClInclude Include="packets\pdata.h" />
+    <ClInclude Include="packets\peer.h" />
+    <ClInclude Include="packets\ppk.h" />
+    <ClInclude Include="packets\redirect.h" />
+    <ClInclude Include="packets\reliable.h" />
+    <ClInclude Include="packets\requestfile.h" />
+    <ClInclude Include="packets\scoreupd.h" />
+    <ClInclude Include="packets\security.h" />
+    <ClInclude Include="packets\shipchange.h" />
+    <ClInclude Include="packets\simple.h" />
+    <ClInclude Include="packets\speed.h" />
+    <ClInclude Include="packets\stats.h" />
+    <ClInclude Include="packets\timesync.h" />
+    <ClInclude Include="packets\types.h" />
+    <ClInclude Include="packets\voice.h" />
+    <ClInclude Include="packets\watchdamage.h" />
+    <ClInclude Include="win32\unistd.h" />
+    <ClInclude Include="win32\win32compat.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C993DB80-E89F-4B0D-88DB-957CDF9CA4FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>asss</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="asss-common.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="asss-common.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>@echo on
+cd $(SolutionDir)
+python "..\scripts\gensparse.py" "$(TargetDir)\generated\sparse.inc" "..\scripts\sparse_params.py"
+python "..\scripts\extract-cfg-docs.py" -c "$(TargetDir)\generated\cfghelp.inc" */*.c */*.py core/clientset.def
+</Command>
+      <Message>Python code generation</Message>
+      <Outputs>$(TargetDir)\generated\sparse.inc;$(TargetDir)\generated\cfghelp.inc</Outputs>
+    </CustomBuildStep>
+    <BuildLog />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CONSOLE;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CustomBuildStep>
+      <Command>@echo on
+cd $(SolutionDir)
+python "..\scripts\gensparse.py" "$(TargetDir)\generated\sparse.inc" "..\scripts\sparse_params.py"
+python "..\scripts\extract-cfg-docs.py" -c "$(TargetDir)\generated\cfghelp.inc" */*.c */*.py core/clientset.def
+</Command>
+      <Message>Python code generation</Message>
+      <Outputs>$(TargetDir)\generated\sparse.inc;$(TargetDir)\generated\cfghelp.inc</Outputs>
+    </CustomBuildStep>
+    <BuildLog />
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
