@@ -1,6 +1,7 @@
 .hg
 .hgignore
 .hgtags
+.DS_Store
 
 src/system/.mk
 src/contenc

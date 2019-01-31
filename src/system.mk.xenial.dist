@@ -1,0 +1,53 @@
+#
+# this makefile is configured for Ubuntu Server 14.04 (Trusty Tahr) AMD64
+# these are the packages you will need:
+# sudo apt-get install build-essential python2.7 python2.7-dev python2.7-dbg \ 
+# libdb5.3-dev mysql-client libmysqlclient-dev gdb mercurial
+#
+
+debug := yes
+opt := no
+prof := no
+link_db_statically := no
+symlink_bins := yes
+
+have_bdb := yes
+have_mysql := yes
+have_python := yes
+
+ASSSHOME = ..
+BINDIR = $(ASSSHOME)/bin
+BUILDDIR = $(ASSSHOME)/build
+SCRIPTS = $(ASSSHOME)/scripts
+PYMOD_HEADERS = $(wildcard */*.h)
+
+INSTALL := install
+LN := ln
+PYTHON := python
+REALPATH := readlink -f
+
+DB_HOME = /usr
+DB_INC = $(DB_HOME)/include
+DB_LIB = $(DB_HOME)/lib
+DB_CFLAGS = -I$(DB_INC)
+ifneq ($(link_db_statically),yes)
+DB_LDFLAGS = -L$(DB_LIB) -Wl,-rpath,$(DB_LIB) -ldb-5.3
+else
+DB_LDFLAGS = $(DB_LIB)/libdb.a
+endif
+
+MYSQL_HOME = /usr
+MYSQL_INC = $(MYSQL_HOME)/include/mysql
+MYSQL_LIB = $(MYSQL_HOME)/lib/mysql
+MYSQL_CFLAGS = -I$(MYSQL_INC)
+MYSQL_LDFLAGS = -L$(MYSQL_LIB) -Wl,-rpath,$(MYSQL_LIB) -lmysqlclient_r
+
+PYTHON_HOME = /usr
+PYTHON_VERSION = 2.7
+PYTHON_INC = $(PYTHON_HOME)/include/python$(PYTHON_VERSION)
+PYTHON_LIB = $(PYTHON_HOME)/lib/python$(PYTHON_VERSION)
+PYTHON_CFLAGS = -I$(PYTHON_INC)
+PYTHON_LDFLAGS = -L$(PYTHON_LIB)/config -lpython$(PYTHON_VERSION) $(UTIL_LIB) -lm
+
+# dist: public
+
